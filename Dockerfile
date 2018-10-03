@@ -8,6 +8,7 @@ RUN apt-get update \
        python-pip \
        software-properties-common \
        rsyslog systemd systemd-cron sudo \
+       git \
     && rm -Rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
